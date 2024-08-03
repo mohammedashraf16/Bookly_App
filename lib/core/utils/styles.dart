@@ -18,5 +18,9 @@ abstract class AppStyles{
     fontSize: 16,
     fontWeight: FontWeight.w500,
 
+  ); static const textStyle30 =TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w900,
+
   );
 }
