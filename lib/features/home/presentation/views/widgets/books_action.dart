@@ -19,7 +19,8 @@ class BooksAction extends StatelessWidget {
                 topLeft: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
               ),
-            ),),
+            ),
+          ),
           Expanded(
             child: CustomButton(
               textColor: Colors.white,
@@ -29,7 +30,8 @@ class BooksAction extends StatelessWidget {
                 topRight: Radius.circular(18),
                 bottomRight: Radius.circular(18),
               ),
-            ),),
+            ),
+          ),
         ],
       ),
     );

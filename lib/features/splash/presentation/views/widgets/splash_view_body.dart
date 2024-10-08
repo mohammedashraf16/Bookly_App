@@ -24,7 +24,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
     navigateToHome();
   }
 
-
   @override
   void dispose() {
     super.dispose();
@@ -66,10 +65,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void navigateToHome() {
     Future.delayed(
       const Duration(seconds: 2),
-          () {
+      () {
         GoRouter.of(context).push(AppRouter.kHomeView);
       },
     );
   }
-
 }

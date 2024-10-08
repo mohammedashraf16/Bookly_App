@@ -7,7 +7,7 @@ class SimilarBooksSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         Align(
           alignment: Alignment.centerLeft,
@@ -24,4 +24,3 @@ class SimilarBooksSection extends StatelessWidget {
     );
   }
 }
-
