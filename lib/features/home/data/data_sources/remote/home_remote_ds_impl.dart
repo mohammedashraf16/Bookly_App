@@ -4,7 +4,6 @@ import 'package:bookely_app/core/utils/api_service.dart';
 import 'package:bookely_app/features/home/data/data_sources/remote/home_remote_ds.dart';
 import 'package:bookely_app/features/home/data/model/book_model/book_model.dart';
 import 'package:bookely_app/features/home/domain/entities/book_entity.dart';
-import 'package:hive/hive.dart';
 
 class HomeRemoteDsImpl implements HomeRemoteDS {
   final ApiService apiService;
@@ -28,6 +27,7 @@ class HomeRemoteDsImpl implements HomeRemoteDS {
     var data = await apiService.get(
         endPoint: "volumes?q=programming&Filtering=free-ebooks&Sorting=newest");
     List<BookEntity> books = getBooksList(data);
+    saveBooksData(books, kNewestBox);
     return books;
   }
 
